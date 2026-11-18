@@ -1,4 +1,4 @@
-[11/18/2026 2:27 PM] Praveen Tiwari: * {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
