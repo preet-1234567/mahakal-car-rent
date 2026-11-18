@@ -1,226 +1,253 @@
-[11/18/2026 2:10 PM] Praveen Tiwari: <!DOCTYPE html>
+[11/18/2026 2:25 PM] Praveen Tiwari: <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Mahakal Car Rentals Falna - Premium car rental service. Book Swift, Fronx, Thar, Scorpio and Fortuner.">
-  <title>Mahakal Car Rentals | Falna Rajasthan</title>
+  <meta name="theme-color" content="#10131b">
+  <title>Mahakal Car Rentals | Falna</title>
+  <meta name="description" content="Experience premium car rentals with Mahakal Car Rentals, Falna Rajasthan.">
   <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<header class="header">
-  <a href="#home" class="brand">
-    <div class="logo">ॐ</div>
-    <div>
-      <h2>MAHAKAL</h2>
-      <span>CAR RENTALS</span>
-    </div>
-  </a>
+  <!-- HEADER -->
+  <header class="header">
+    <a href="#home" class="brand">
+      <div class="logo">ॐ</div>
+      <div>
+        <h2>MAHAKAL</h2>
+        <span>CAR RENTALS</span>
+      </div>
+    </a>
 
-  <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
 
-  <nav id="navMenu">
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#cars">Our Cars</a>
-    <a href="#booking">Booking</a>
-    <a href="#contact">Contact</a>
+  <!-- FULL SCREEN MENU -->
+  <nav class="menu-overlay" id="menuOverlay">
+    <a href="#home">HOME</a>
+    <a href="#about">ABOUT</a>
+    <a href="#cars">OUR CARS</a>
+    <a href="#experiences">EXPERIENCES</a>
+    <a href="#gallery">GALLERY</a>
+    <a href="#contact">CONTACT</a>
+    <a href="#booking" class="menu-book">BOOK YOUR RIDE</a>
   </nav>
-</header>
 
-<main>
-<section class="hero" id="home">
-  <div class="hero-content">
-    <p class="gold-text">WELCOME TO MAHAKAL CAR RENTALS</p>
-    <h1>YOUR JOURNEY,<br><span>OUR RESPONSIBILITY.</span></h1>
-    <p>Experience premium comfort, luxury and freedom with our car rental services in Falna, Rajasthan.</p>
-    <div class="hero-buttons">
-      <a href="#cars" class="btn">Explore Cars</a>
-      <a href="#booking" class="btn btn-outline">Book Now</a>
-    </div>
-  </div>
-</section>
+  <!-- HERO -->
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-bg"></div>
+      <div class="hero-content">
+        <p class="eyebrow">MAHAKAL CAR RENTALS • FALNA</p>
 
-<section class="features">
-  <div><span>🚘</span><h3>Premium Cars</h3><p>Clean & comfortable vehicles</p></div>
-  <div><span>🛡️</span><h3>Safe Journey</h3><p>Travel with confidence</p></div>
-  <div><span>📍</span><h3>Falna Rajasthan</h3><p>Local rental service</p></div>
-  <div><span>📞</span><h3>24/7 Support</h3><p>Contact our team</p></div>
-</section>
+        <h1>
+          THE ART OF<br>
+          <span>TRAVELLING</span><br>
+          IN STYLE.
+        </h1>
 
-<section class="section about" id="about">
-  <div class="about-image">
-    <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1000&q=85" alt="Luxury car">
-  </div>
-  <div class="about-content">
-    <p class="gold-text">ABOUT OUR COMPANY</p>
-    <h2>Travel With Comfort & Style</h2>
-    <p>Welcome to Mahakal Car Rentals, your trusted car rental service in Falna, Rajasthan.</p>
-    <p>We provide premium vehicles for family trips, business travel, weddings, sightseeing and personal journeys.</p>
-    <p>Choose self-drive or chauffeur-driven rental services according to your requirements.</p>
-    <a href="#booking" class="btn">Book Your Ride</a>
-  </div>
-</section>
+        <div class="gold-line"></div>
 
-<section class="section cars-section" id="cars">
-  <div class="section-heading">
-    <p class="gold-text">OUR PREMIUM FLEET</p>
-    <h2>Choose Your Perfect Ride</h2>
-    <p>Find the right car for your next journey.</p>
-  </div>
+        <p class="hero-description">
+          Discover premium journeys with Mahakal Car Rentals.
+          Experience comfort, luxury and freedom on every road.
+        </p>
 
-  <div class="car-grid">
+        <div class="hero-tags">
+          <span>PREMIUM CARS</span>
+          <span>LUXURY RIDES</span>
+          <span>FALNA RAJASTHAN</span>
+        </div>
 
-    <article class="car-card">
-      <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=900&q=85" alt="Swift car">
-      <div class="car-info">
-        <h3>Maruti Suzuki Swift</h3>
-        <p>Comfortable & economical</p>
-        <div class="price">₹2,990 <small>/ day</small></div>
-        <button class="btn book-car" data-car="Swift">Book Now</button>
+        <a href="#cars" class="gold-button">EXPLORE OUR CARS →</a>
       </div>
-    </article>
 
-    <article class="car-card">
-      <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=900&q=85" alt="Fronx car">
-      <div class="car-info">
-        <h3>Maruti Suzuki Fronx</h3>
-        <p>Stylish & comfortable</p>
-        <div class="price">₹3,590 <small>/ day</small></div>
-        <button class="btn book-car" data-car="Fronx">Book Now</button>
+      <div class="scroll-text">SCROLL TO DISCOVER ↓</div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section about" id="about">
+      <p class="eyebrow">WELCOME TO MAHAKAL</p>
+      <h2>YOUR JOURNEY,<br><span>OUR PRIORITY.</span></h2>
+      <div class="gold-line"></div>
+
+      <p class="section-description">
+        Mahakal Car Rentals, based in Falna, Rajasthan,
+        brings you a premium collection of cars for every journey.
+        From comfortable family travel to luxury experiences,
+        we make every ride special.
+      </p>
+
+      <a href="#booking" class="outline-button">ENQUIRE / BOOK NOW</a>
+    </section>
+
+    <!-- CARS -->
+    <section class="section cars" id="cars">
+      <p class="eyebrow">THE COLLECTION</p>
+      <h2>CHOOSE YOUR<br><span>PERFECT RIDE.</span></h2>
+
+      <div class="car-list">
+
+        <article class="car-card">
+          <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=1100&q=85" alt="Swift car">
+          <div class="car-details">
+            <span>01 / COMFORT</span>
+            <h3>MARUTI SWIFT</h3>
+            <p>Comfortable everyday journeys.</p>
+            <div class="car-bottom">
+              <strong>₹2,990 <small>/ DAY</small></strong>
+              <button class="car-book" data-car="Maruti Swift">BOOK →</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="car-card">
+          <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=1100&q=85" alt="Fronx car">
+          <div class="car-details">
+            <span>02 / PREMIUM</span>
+            <h3>MARUTI FRONX</h3>
+            <p>Style meets comfort.</p>
+            <div class="car-bottom">
+              <strong>₹3,590 <small>/ DAY</small></strong>
+              <button class="car-book" data-car="Maruti Fronx">BOOK →</button>
+            </div>
+          </div>
+        </article>
+[11/18/2026 2:25 PM] Praveen Tiwari: <article class="car-card">
+          <img src="https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&w=1100&q=85" alt="Thar SUV">
+          <div class="car-details">
+            <span>03 / ADVENTURE</span>
+            <h3>MAHINDRA THAR</h3>
+            <p>For bold and adventurous journeys.</p>
+            <div class="car-bottom">
+              <strong>₹3,990 <small>/ DAY</small></strong>
+              <button class="car-book" data-car="Mahindra Thar">BOOK →</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="car-card">
+          <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1100&q=85" alt="Scorpio SUV">
+          <div class="car-details">
+            <span>04 / POWER</span>
+            <h3>MAHINDRA SCORPIO</h3>
+            <p>Powerful journeys with extra space.</p>
+            <div class="car-bottom">
+              <strong>₹4,990 <small>/ DAY</small></strong>
+              <button class="car-book" data-car="Mahindra Scorpio">BOOK →</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="car-card">
+          <img src="https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=1100&q=85" alt="Fortuner SUV">
+          <div class="car-details">
+            <span>05 / LUXURY</span>
+            <h3>TOYOTA FORTUNER</h3>
+            <p>Luxury and presence on every road.</p>
+            <div class="car-bottom">
+              <strong>₹8,990 <small>/ DAY</small></strong>
+              <button class="car-book" data-car="Toyota Fortuner">BOOK →</button>
+            </div>
+          </div>
+        </article>
+
       </div>
-    </article>
+    </section>
 
-    <article class="car-card">
-      <img src="https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&w=900&q=85" alt="Thar SUV">
-      <div class="car-info">
-        <h3>Mahindra Thar</h3>
-        <p>Adventure & power</p>
-        <div class="price">₹3,990 <small>/ day</small></div>
-        <button class="btn book-car" data-car="Thar">Book Now</button>
+    <!-- EXPERIENCE -->
+    <section class="experience" id="experiences">
+      <div class="experience-content">
+        <p class="eyebrow">THE MAHAKAL EXPERIENCE</p>
+        <h2>MORE THAN<br>A RIDE.<br><span>AN EXPERIENCE.</span></h2>
+        <p>
+          Make every destination memorable with
+          comfortable rides and a premium travel experience.
+        </p>
+        <a href="#booking" class="gold-button">PLAN YOUR JOURNEY →</a>
       </div>
-    </article>
-[11/18/2026 2:10 PM] Praveen Tiwari: <article class="car-card">
-      <img src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=900&q=85" alt="Scorpio SUV">
-      <div class="car-info">
-        <h3>Mahindra Scorpio</h3>
-        <p>Powerful family SUV</p>
-        <div class="price">₹4,990 <small>/ day</small></div>
-        <button class="btn book-car" data-car="Scorpio">Book Now</button>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="section gallery" id="gallery">
+      <p class="eyebrow">OUR GALLERY</p>
+      <h2>EXPERIENCE THE <span>DRIVE.</span></h2>
+      <div class="gallery-grid">
+        <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=900&q=85" alt="Luxury car">
+        <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=900&q=85" alt="Car gallery">
+        <img src="https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?auto=format&fit=crop&w=900&q=85" alt="Premium vehicle">
       </div>
-    </article>
+    </section>
 
-    <article class="car-card">
-      <img src="https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=900&q=85" alt="Fortuner SUV">
-      <div class="car-info">
-        <h3>Toyota Fortuner</h3>
-        <p>Luxury & premium comfort</p>
-        <div class="price">₹8,990 <small>/ day</small></div>
-        <button class="btn book-car" data-car="Fortuner">Book Now</button>
-      </div>
-    </article>
+    <!-- BOOKING -->
+    <section class="section booking" id="booking">
+      <p class="eyebrow">RESERVATIONS</p>
+      <h2>BOOK YOUR <span>JOURNEY.</span></h2>
+      <p class="section-description">
+        Share your travel details and connect directly with us on WhatsApp.
+      </p>
 
-  </div>
-  <p class="price-note">*Prices are per day. Please confirm availability and final rental terms before booking.</p>
-</section>
+      <form id="bookingForm">
+        <label for="name">YOUR NAME</label>
+        <input id="name" type="text" placeholder="Enter your name" required>
 
-<section class="section booking-section" id="booking">
-  <div class="section-heading">
-    <p class="gold-text">RESERVE YOUR RIDE</p>
-    <h2>Book Your Car Now</h2>
-    <p>Fill in your details and send your booking request on WhatsApp.</p>
-  </div>
+        <label for="phone">MOBILE NUMBER</label>
+        <input id="phone" type="tel" maxlength="10" pattern="[0-9]{10}" placeholder="10 digit mobile number" required>
 
-  <form id="bookingForm" class="booking-form">
-    <label for="customerName">Full Name</label>
-    <input id="customerName" type="text" placeholder="Enter your name" required>
+        <label for="car">SELECT YOUR CAR</label>
+        <select id="car" required>
+          <option value="">Choose a car</option>
+          <option>Maruti Swift</option>
+          <option>Maruti Fronx</option>
+          <option>Mahindra Thar</option>
+          <option>Mahindra Scorpio</option>
+          <option>Toyota Fortuner</option>
+        </select>
 
-    <label for="customerPhone">Mobile Number</label>
-    <input id="customerPhone" type="tel" placeholder="Enter mobile number" pattern="[6-9][0-9]{9}" maxlength="10" required>
+        <label for="date">PICKUP DATE</label>
+        <input type="date" id="date" required>
 
-    <label for="carSelect">Select Car</label>
-    <select id="carSelect" required>
-      <option value="">Choose your car</option>
-      <option value="Swift">Swift - ₹2,990/day</option>
-      <option value="Fronx">Fronx - ₹3,590/day</option>
-      <option value="Thar">Thar - ₹3,990/day</option>
-      <option value="Scorpio">Scorpio - ₹4,990/day</option>
-      <option value="Fortuner">Fortuner - ₹8,990/day</option>
-    </select>
+        <label for="days">NUMBER OF DAYS</label>
+        <input type="number" id="days" min="1" max="30" value="1" required>
+[11/18/2026 2:25 PM] Praveen Tiwari: <label for="note">MESSAGE (OPTIONAL)</label>
+        <textarea id="note" placeholder="Your travel details"></textarea>
 
-    <label for="rentalType">Rental Type</label>
-    <select id="rentalType" required>
-      <option value="">Select rental type</option>
-      <option value="Self Drive">Self Drive</option>
-      <option value="With Driver">With Driver</option>
-    </select>
+        <button type="submit" class="gold-button submit-button">
+          SEND BOOKING ON WHATSAPP →
+        </button>
+      </form>
+    </section>
 
-    <label for="pickupDate">Pickup Date</label>
-    <input id="pickupDate" type="date" required>
+    <!-- CONTACT -->
+    <section class="section contact" id="contact">
+      <p class="eyebrow">GET IN TOUCH</p>
+      <h2>LET'S PLAN YOUR <span>NEXT JOURNEY.</span></h2>
 
-    <label for="returnDate">Return Date</label>
-    <input id="returnDate" type="date" required>
+      <p>MAHAKAL CAR RENTALS</p>
+      <p>Falna, Rajasthan, India</p>
 
-    <label for="pickupLocation">Pickup Location</label>
-    <input id="pickupLocation" type="text" placeholder="Enter pickup location" required>
+      <a href="https://www.instagram.com/mahakal_car_rental_falna09/"
+         target="_blank" rel="noopener" class="outline-button">
+        FOLLOW US ON INSTAGRAM
+      </a>
+    </section>
+  </main>
 
-    <label for="message">Additional Message</label>
-    <textarea id="message" placeholder="Any special requirements?"></textarea>
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-logo">ॐ MAHAKAL</div>
+    <p>CAR RENTALS • FALNA • RAJASTHAN</p>
+    <p>© 2026 Mahakal Car Rentals. All Rights Reserved.</p>
+  </footer>
 
-    <button type="submit" class="btn submit-btn">Send Booking on WhatsApp</button>
-  </form>
-</section>
+  <a href="#" id="whatsappFloat" class="whatsapp-float" aria-label="WhatsApp">✆</a>
 
-<section class="section contact-section" id="contact">
-  <div class="section-heading">
-    <p class="gold-text">GET IN TOUCH</p>
-    <h2>Contact Mahakal Car Rentals</h2>
-    <p>We are always ready to help you.</p>
-  </div>
-
-  <div class="contact-grid">
-    <div class="contact-card">
-      <span>📍</span>
-      <h3>Our Location</h3>
-      <p>Opp. Bank of Baroda, Vijay Nagar, Falna, Rajasthan</p>
-      <a href="https://www.google.com/maps/search/?api=1&query=Bank+of+Baroda+Vijay+Nagar+Falna+Rajasthan" target="_blank">View Location</a>
-    </div>
-
-    <div class="contact-card">
-      <span>📞</span>
-      <h3>Jagdish Solanki</h3>
-      <p>+91 70232 45984</p>
-      <a href="https://wa.me/917023245984" target="_blank">WhatsApp</a>
-    </div>
-
-    <div class="contact-card">
-      <span>📞</span>
-      <h3>Mahipal Singh Sisodiya</h3>
-      <p>+91 78658 04732</p>
-      <a href="https://wa.me/917865804732" target="_blank">WhatsApp</a>
-    </div>
-
-    <div class="contact-card">
-      <span>📸</span>
-      <h3>Instagram</h3>
-      <p>Follow us for updates</p>
-      <a href="https://www.instagram.com/mahakal_car_rental_falna09/" target="_blank">@mahakal_car_rental_falna09</a>
-    </div>
-  </div>
-</section>
-</main>
-[11/18/2026 2:10 PM] Praveen Tiwari: <footer>
-  <div class="footer-brand">ॐ MAHAKAL CAR RENTALS</div>
-  <p>Premium Car Rental Service | Falna, Rajasthan</p>
-  <p>© 2026 Mahakal Car Rentals. All Rights Reserved.</p>
-  <p class="developer">Website Designed & Developed by <strong>Praveen Tiwari</strong> | Tiwari and Company</p>
-</footer>
-
-<a class="whatsapp-float" href="https://wa.me/917023245984?text=Hello%20Mahakal%20Car%20Rentals" target="_blank" aria-label="Chat on WhatsApp">☏</a>
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
