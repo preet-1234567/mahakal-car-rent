@@ -1,0 +1,534 @@
+[11/18/2026 2:10 PM] Praveen Tiwari: * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 85px;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: #090909;
+  color: #fff;
+  line-height: 1.6;
+}
+
+:root {
+  --gold: #d5ad55;
+  --black: #090909;
+  --card: #171717;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  min-height: 80px;
+  padding: 12px 7%;
+  background: rgba(8,8,8,.97);
+  border-bottom: 1px solid #34302a;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo {
+  width: 54px;
+  height: 54px;
+  border: 2px solid var(--gold);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: var(--gold);
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.brand h2 {
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+.brand span {
+  font-size: 11px;
+  letter-spacing: 4px;
+  color: var(--gold);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+nav a {
+  font-size: 13px;
+  font-weight: 600;
+  transition: .3s;
+}
+
+nav a:hover {
+  color: var(--gold);
+}
+
+.menu-btn {
+  display: none;
+  background: none;
+  color: var(--gold);
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.hero {
+  min-height: 610px;
+  background:
+    linear-gradient(90deg,rgba(0,0,0,.93),rgba(0,0,0,.45)),
+    url("https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1800&q=90");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  padding: 80px 8%;
+}
+
+.hero-content {
+  max-width: 650px;
+}
+
+.gold-text {
+  color: var(--gold);
+  letter-spacing: 3px;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.hero h1 {
+  font-size: clamp(35px, 5.5vw, 66px);
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.hero h1 span {
+  color: var(--gold);
+}
+
+.hero-content > p:not(.gold-text) {
+  color: #ccc;
+  max-width: 520px;
+  margin-bottom: 30px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-block;
+  background: var(--gold);
+  color: #111;
+  border: 1px solid var(--gold);
+  border-radius: 4px;
+  padding: 13px 24px;
+  font-size: 13px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: .3s;
+  text-align: center;
+}
+
+.btn:hover {
+  background: transparent;
+  color: var(--gold);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--gold);
+}
+
+.features {
+  background: #151515;
+  padding: 35px 7%;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 25px;
+  text-align: center;
+}
+
+.features span {
+  font-size: 30px;
+}
+
+.features h3 {
+  font-size: 15px;
+  color: var(--gold);
+  margin: 8px 0;
+}
+
+.features p {
+  font-size: 12px;
+  color: #aaa;
+}
+
+.section {
+  padding: 85px 8%;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 55px;
+  align-items: center;
+}
+
+.about-image img {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid #544426;
+}
+
+.about-content h2,
+.section-heading h2 {
+  font-size: clamp(27px, 4vw, 38px);
+  margin-bottom: 18px;
+}
+
+.about-content p:not(.gold-text) {
+  color: #aaa;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.about-content .btn {
+  margin-top: 12px;
+}
+
+.cars-section {
+  background: #111;
+}
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.section-heading > p:last-child {
+  color: #aaa;
+  font-size: 14px;
+}
+
+.car-grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 25px;
+}
+
+.car-card {
+  background: var(--card);
+  border: 1px solid #34302a;
+  border-radius: 9px;
+  overflow: hidden;
+  transition: .3s;
+}
+
+.car-card:hover {
+  transform: translateY(-7px);
+  border-color: var(--gold);
+}
+
+.car-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+.car-info {
+  padding: 22px;
+}
+
+.car-info h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.car-info p {
+  font-size: 12px;
+  color: #aaa;
+}
+
+.price {
+  color: var(--gold);
+  font-size: 25px;
+  font-weight: 800;
+  margin: 17px 0;
+}
+[11/18/2026 2:10 PM] Praveen Tiwari: .price small {
+  font-size: 12px;
+  color: #aaa;
+}
+
+.car-info .btn {
+  width: 100%;
+}
+
+.price-note {
+  text-align: center;
+  font-size: 12px;
+  color: #aaa;
+  margin-top: 25px;
+}
+
+.booking-section {
+  background:
+    linear-gradient(rgba(0,0,0,.94),rgba(0,0,0,.96)),
+    url("https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1400&q=80");
+  background-size: cover;
+  background-position: center;
+}
+
+.booking-form {
+  max-width: 650px;
+  margin: auto;
+  background: #171717;
+  border: 1px solid #51432b;
+  padding: 35px;
+  border-radius: 10px;
+}
+
+.booking-form label {
+  display: block;
+  font-size: 13px;
+  margin: 15px 0 7px;
+  color: var(--gold);
+}
+
+.booking-form input,
+.booking-form select,
+.booking-form textarea {
+  width: 100%;
+  padding: 13px;
+  border-radius: 5px;
+  border: 1px solid #444;
+  background: #0c0c0c;
+  color: white;
+  font-family: inherit;
+  outline: none;
+}
+
+.booking-form input:focus,
+.booking-form select:focus,
+.booking-form textarea:focus {
+  border-color: var(--gold);
+}
+
+.booking-form textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.booking-form input[type="date"] {
+  color-scheme: dark;
+}
+
+.submit-btn {
+  width: 100%;
+  margin-top: 25px;
+}
+
+.contact-section {
+  background: #111;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 18px;
+}
+
+.contact-card {
+  background: #1b1b1b;
+  border: 1px solid #38322a;
+  padding: 25px 15px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.contact-card span {
+  font-size: 30px;
+}
+
+.contact-card h3 {
+  font-size: 15px;
+  margin: 12px 0;
+}
+
+.contact-card p {
+  color: #aaa;
+  font-size: 12px;
+  min-height: 42px;
+  overflow-wrap: anywhere;
+}
+
+.contact-card a {
+  display: inline-block;
+  color: var(--gold);
+  font-size: 12px;
+  margin-top: 12px;
+  overflow-wrap: anywhere;
+}
+
+footer {
+  background: #050505;
+  text-align: center;
+  padding: 40px 15px;
+  border-top: 1px solid #38322a;
+}
+
+.footer-brand {
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--gold);
+  margin-bottom: 12px;
+}
+
+footer p {
+  color: #999;
+  font-size: 12px;
+  margin-top: 8px;
+}
+
+.developer {
+  margin-top: 22px;
+}
+
+.developer strong {
+  color: var(--gold);
+}
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 22px;
+  right: 22px;
+  z-index: 1001;
+  width: 58px;
+  height: 58px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #25d366;
+  color: white;
+  font-size: 35px;
+  box-shadow: 0 3px 15px #000;
+}
+
+@media(max-width:900px) {
+  .car-grid {
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  .contact-grid {
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  .features {
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+
+@media(max-width:650px) {
+  .header {
+    padding: 10px 5%;
+  }
+
+  .brand h2 {
+    font-size: 17px;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+
+  nav {
+    display: none;
+    position: absolute;
+    top: 78px;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background: #101010;
+    flex-direction: column;
+    align-items: center;
+    gap: 22px;
+    border-bottom: 1px solid var(--gold);
+  }
+
+  nav.active {
+    display: flex;
+  }
+
+  .hero {
+    min-height: 520px;
+    padding: 65px 6%;
+    background-position: 60% center;
+  }
+
+  .section {
+    padding: 65px 5%;
+  }
+
+  .about {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .about-image img {
+    height: 250px;
+  }
+
+  .car-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .car-card img {
+    height: 220px;
+  }
+
+  .booking-form {
+    padding: 22px 16px;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .features {
+    padding: 30px 5%;
+  }
+
+  .whatsapp-float {
+    width: 52px;
+    height: 52px;
+    font-size: 30px;
+  }
+}
